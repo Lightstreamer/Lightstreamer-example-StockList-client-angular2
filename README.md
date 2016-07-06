@@ -38,7 +38,7 @@ The client demos configuration assumes that Lightstreamer Server, Lightstreamer 
 ```js
 var lsClient = new LightstreamerClient("http://localhost:8080","DEMO");
 ```
-in `lsClient.js` and change it accordingly.
+in `app/stock.service.ts` and change it accordingly.
 
 The demo is now ready to be launched.
 
