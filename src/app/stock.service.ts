@@ -54,7 +54,7 @@ export class StockService {
     
     subscribeStocks() {
         // update stock matrix and notify the service's clients by statement this.ref.detectChanges()
-        this.lsClient = new LightstreamerClient(null, "DEMO");
+        this.lsClient = new LightstreamerClient("http://localhost:8080", "DEMO");
         this.lsClient.connectionSharing.enableSharing("DemoCommonConnection", "ATTACH", "CREATE");
         this.lsClient.addListener(new StatusWidget("left", "0px", true));
         this.lsClient.connect();
