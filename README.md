@@ -36,7 +36,7 @@ If you choose the former, please create the folders `/pages/demos/[demo_name]` i
 
 The client demos configuration assumes that Lightstreamer Server, Lightstreamer Adapters, and this client are launched on the same machine. If you need to target a different Lightstreamer server, please search for this line:
 ```js
-var lsClient = new LightstreamerClient(null,"DEMO");
+var lsClient = new LightstreamerClient("http://localhost:8080","DEMO");
 ```
 in `lsClient.js` and change it accordingly.
 
