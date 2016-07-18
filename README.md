@@ -59,4 +59,4 @@ The demo is now ready to be launched.
 
 ## Lightstreamer Compatibility Notes
 
-- Compatible with Lightstreamer Web Client library version 7.0 or newer.
+- Compatible with Lightstreamer Web Client library version 6.0 or newer.
