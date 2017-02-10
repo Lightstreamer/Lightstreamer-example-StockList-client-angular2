@@ -48,7 +48,9 @@ export class StockService {
         this.stocks = new Array(this.itemNames.length);
         for (var i = 0, len = this.stocks.length; i < len; i++) {
             this.stocks[i] = new Array(this.fieldNames.length);
-            this.stocks[i].fill('-');
+            for (var j = 0, len2 = this.stocks[i].length; j < len2; j++) {
+            	this.stocks[i][j] = '-';
+            }
         }
     }
     

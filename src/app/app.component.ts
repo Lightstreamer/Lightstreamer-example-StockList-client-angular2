@@ -11,7 +11,6 @@ Copyright (c) Lightstreamer Srl
    limitations under the License.
 */
 import { Component } from '@angular/core';
-import { StockTableComponent } from './stock-table.component';
 import { StockService } from './stock.service';
 
 @Component({
@@ -19,7 +18,6 @@ import { StockService } from './stock.service';
     template: `
         <stock-table>Loading...</stock-table>
         `,
-    directives: [StockTableComponent],
     providers: [StockService] // injects StockService
 })
 export class AppComponent {
