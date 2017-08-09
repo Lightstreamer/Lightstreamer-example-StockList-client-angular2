@@ -2,7 +2,7 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
-	"build": "tsc -p src/",
+    "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",
     "build:e2e": "tsc -p e2e/",
     "serve": "lite-server -c=bs-config.json",
@@ -12,27 +12,28 @@
   },
   "license": "ISC",
   "dependencies": {
-	"@angular/common": "~2.4.0",
-    "@angular/compiler": "~2.4.0",
-    "@angular/core": "~2.4.0",
-    "@angular/forms": "~2.4.0",
-    "@angular/http": "~2.4.0",
-    "@angular/platform-browser": "~2.4.0",
-    "@angular/platform-browser-dynamic": "~2.4.0",
-    "@angular/router": "~3.4.0",
-
-    "angular-in-memory-web-api": "~0.2.4",
-    "systemjs": "0.19.40",
+    "@angular/animations": "^4.3.3",
+    "@angular/common": "^4.3.3",
+    "@angular/compiler": "^4.3.3",
+    "@angular/compiler-cli": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "@angular/forms": "^4.3.3",
+    "@angular/http": "^4.3.3",
+    "@angular/platform-browser": "^4.3.3",
+    "@angular/platform-browser-dynamic": "^4.3.3",
+    "@angular/platform-server": "^4.3.3",
+    "@angular/router": "^4.3.3",
+    "angular-in-memory-web-api": "~0.3.2",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
-    "zone.js": "^0.7.4"
+    "systemjs": "0.19.40",
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
-  	"concurrently": "^3.1.0",
+    "concurrently": "^3.1.0",
     "lite-server": "^2.2.2",
-    "typescript": "~2.0.10",
-
-	"@types/node": "^6.0.46",
-    "@types/jasmine": "^2.5.36"    
+    "typescript": "~2.3.2",
+    "@types/node": "^6.0.46",
+    "@types/jasmine": "^2.5.36"
   }
 }
