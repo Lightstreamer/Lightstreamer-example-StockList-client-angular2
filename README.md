@@ -1,4 +1,4 @@
-# Lightstreamer - Basic Stock-List Demo - HTML (Angular 4) Client
+# Lightstreamer - Basic Stock-List Demo - HTML (Angular) Client
 
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-angular2 -->
 
