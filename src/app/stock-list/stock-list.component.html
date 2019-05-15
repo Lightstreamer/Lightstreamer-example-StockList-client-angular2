@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Last</td>
+            <td>Time</td>
+            <td>Change</td>
+            <td>Bid Size</td>
+            <td>Bid</td>
+            <td>Ask</td>
+            <td>Ask Size</td>
+            <td>Min</td>
+            <td>Max</td>
+            <td>Ref.</td>
+            <td>Open</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of stocks">
+            <td *ngFor="let field of row; let i=index" [class.leftAlign]="fieldNames[i] === 'stock_name'">
+                {{field}}
+            </td>
+        </tr>
+    </tbody>
+</table>

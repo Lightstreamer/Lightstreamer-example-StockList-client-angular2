@@ -11,15 +11,12 @@ Copyright (c) Lightstreamer Srl
    limitations under the License.
 */
 import { Component } from '@angular/core';
-import { StockService } from './stock.service';
 
 @Component({
-    selector: 'my-app',
-    template: `
-        <stock-table>Loading...</stock-table>
-        `,
-    providers: [StockService] // injects StockService
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    
+  title = 'stocklistdemo-angular2';
 }

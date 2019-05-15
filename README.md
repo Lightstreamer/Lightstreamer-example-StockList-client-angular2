@@ -28,8 +28,8 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 * Note that, as prerequisite, the [Lightstreamer - Stock- List Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Launch Lightstreamer Server.
-* Build a `lightstreamer.js` file from the [online generator](http://www.lightstreamer.com/docs/client_javascript_tools/generator.html) and put it in the `src/js` folder of the demo. Be sure to include the LightstreamerClient, Subscription, ConnectionSharing, and StatusWidget modules and to use the "Use globals" version.
-* Change the current directory to the location of the file `package.json` and issue the commands `npm install` (to install Angular libraries) and `npm run build` (to compile Typescript files). Be sure to have installed [Node.js and npm](https://nodejs.org/en/download/) and verify that you are running at least node v5.x.x and npm 3.x.x by running `node -v` and `npm -v` in a console window. 
+* Build a `lightstreamer.js` file from the [online generator](http://www.lightstreamer.com/docs/client_javascript_tools/generator.html) and put it in the `src/assets` folder of the demo. Be sure to include the LightstreamerClient, Subscription, ConnectionSharing, and StatusWidget modules and to use the "Use globals" version.
+* Change the current directory to the location of the file `package.json` and issue the commands `npm install` (to install Angular libraries) and `npm run build` (to compile Typescript files). Be sure to have installed [Node.js and npm](https://nodejs.org/en/download/) and verify that you are running at least node v8.x.x and npm 6.x.x by running `node -v` and `npm -v` in a console window. 
 
 You can deploy this demo inside Lightstreamer internal web server or in any other web server.
 If you choose the former, please create the folders `/pages/demos/[demo_name]` into your Lightstreamer server installation then copy the contents of the `src` folder of this project there.
@@ -38,7 +38,7 @@ The client demos configuration assumes that Lightstreamer Server, Lightstreamer 
 ```js
 var lsClient = new LightstreamerClient("http://localhost:8080","DEMO");
 ```
-in `app/stock.service.ts` and change it accordingly.
+in `stock-list.service.ts` and change it accordingly.
 
 The demo is now ready to be launched.
 

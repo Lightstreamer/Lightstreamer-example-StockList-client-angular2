@@ -1,0 +1,91 @@
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'helvetica neue', Helvetica, Arial;
+}
+
+/*grids styles*/
+
+table {
+  border-collapse: collapse;
+  width: 770px;
+}
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 770px; 
+    height: 333px
+}
+thead tr, .ngHeaderText {
+  font-family: Verdana, Arial, Helvetica, Sans-serif;
+  background-color: #9D3534;
+  color: #eeeeee;
+  font-weight: bold;
+  text-align: left;
+}
+thead td {
+  text-align: left;
+}
+td {
+  padding-top: 2px;
+  text-align: right;
+}
+.leftAlign {
+  text-align: left;
+}
+.rightAlign {
+  text-align: right;
+}
+.ngSmallFont {
+  font-size: 9pt;
+}
+
+/* main styles */
+#wrap {
+  margin: 0 auto;
+  width: 770px;
+}
+
+#title {
+  float: right;
+  font-family: Verdana, Arial, Helvetica, Sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 35px;
+  padding-left: 60px;
+}
+
+#logo {
+    float: right;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+#logoAngular {
+	float: left;
+  /*padding-left: 25px;*/
+}
+
+#content {
+  clear:both;
+  padding-top:12px;
+}
+
+h2 {
+  padding-top: 40px;
+  margin-bottom: 0;  
+}
+
+h2 a {
+  color:black;
+}
+
+.desc {
+  font-size: 9pt;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+.mainDesc {
+  position: relative;
+  top: 24px;
+}

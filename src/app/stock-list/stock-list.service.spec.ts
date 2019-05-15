@@ -10,22 +10,15 @@ Copyright (c) Lightstreamer Srl
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { TestBed } from '@angular/core/testing';
 
-import { AppComponent } from './app.component';
-import { StockListComponent } from './stock-list/stock-list.component';
-import { StockListService } from './stock-list/stock-list.service';
+import { StockListService } from './stock-list.service';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    StockListComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [StockListService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+describe('StockListService', () => {
+  beforeEach(() => TestBed.configureTestingModule({}));
+
+  it('should be created', () => {
+    const service: StockListService = TestBed.get(StockListService);
+    expect(service).toBeTruthy();
+  });
+});
