@@ -18,7 +18,7 @@ This page uses the <b>JavaScript Web Client API for Lightstreamer</b> to handle 
 A Lightstreamer Subscription is used for subscribing to the data. The onItemUpdate callback implementation fills an object that is used by Angular to populate the HTML.
 
 The demo includes the following client-side functionalities:
-* A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 10 items, subscribed to in **MERGE** mode.
+* A [Subscription](https://lightstreamer.com/api/ls-web-client/latest/Subscription.html) containing 10 items, subscribed to in **MERGE** mode.
 
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-angular2 -->
 
@@ -28,7 +28,9 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 * Note that, as prerequisite, the [Lightstreamer - Stock- List Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Launch Lightstreamer Server.
-* Build a `lightstreamer_globals.js` file from the [online generator](http://www.lightstreamer.com/docs/client_javascript_tools/generator.html) and put it in the `src/assets` folder of the demo. Be sure to include the LightstreamerClient, Subscription, ConnectionSharing, and StatusWidget modules and to use the "Use globals" version.
+* Build a file to be named `lightstreamer_globals.js` with the provided generator and put it in the `src/assets` folder of the demo;
+  see the build instructions on the [GitHub page](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript#building).
+  Be sure to include the LightstreamerClient, Subscription, ConnectionSharing, and StatusWidget modules and to use the "Use globals" version.
 * Change the current directory to the location of the file `package.json` and issue the commands `npm install` (to install Angular libraries) and `npm run build` (to compile Typescript files). Be sure to have installed [Node.js and npm](https://nodejs.org/en/download/) and verify that you are running at least node v8.x.x and npm 6.x.x by running `node -v` and `npm -v` in a console window. 
 
 You can deploy this demo inside Lightstreamer internal web server or in any other web server.
