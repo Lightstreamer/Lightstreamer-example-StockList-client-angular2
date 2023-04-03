@@ -29,7 +29,6 @@ export class StockListService {
 
         const lsClient = new LightstreamerClient(
             (document.location.protocol === 'https:' ? 'https' : 'http') + '://push.lightstreamer.com', 'DEMO');
-        lsClient.connectionSharing.enableSharing('DemoCommonConnection', 'ATTACH', 'CREATE');
         lsClient.addListener(new StatusWidget('left', '0px', true));
         lsClient.connect();
         lsClient.subscribe(subscription);
