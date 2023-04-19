@@ -28,17 +28,16 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 * Note that, as prerequisite, the [Lightstreamer - Stock- List Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Launch Lightstreamer Server.
-* Get the `lightstreamer.min.js` file from [npm](https://www.npmjs.com/package/lightstreamer-client-web) or [unpkg](https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js) and put it in the `src/assets` folder of the demo.
-* Change the current directory to the location of the file `package.json` and issue the commands `npm install` (to install Angular libraries) and `npm run build` (to compile Typescript files). Be sure to have installed [Node.js and npm](https://nodejs.org/en/download/) and verify that you are running at least node v8.x.x and npm 6.x.x by running `node -v` and `npm -v` in a console window. 
+* Change the current directory to the location of the file `package.json` and issue the commands `npm install` (to install Angular libraries) and `npm run build` (to compile Typescript files). Be sure to have installed [Node.js and npm](https://nodejs.org/en/download/).
 
 You can deploy this demo inside Lightstreamer internal web server or in any other web server.
 If you choose the former, please create the folders `/pages/demos/[demo_name]` into your Lightstreamer server installation then copy the contents of the `dist` folder of this project there.
 
 The client demos configuration assumes that Lightstreamer Server, Lightstreamer Adapters, and this client are launched on the same machine. If you need to target a different Lightstreamer server, please search for this line:
 ```js
-var lsClient = new LightstreamerClient
+this.client = new LightstreamerClient
 ```
-in `stock-list.service.ts` and change it accordingly.
+in `app.component.ts` and change it accordingly.
 
 The demo is now ready to be launched.
 
@@ -59,6 +58,7 @@ The demo is now ready to be launched.
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer Web Client library version 8.0 or newer.
-
+* Compatible with Lightstreamer Web Client library version 9.0 or newer.
+* For Lightstreamer Server 7.3.2 or newer. Ensure that Web Client API is supported by Lightstreamer Server license configuration.
+* For a version of this example compatible with Lightstreamer SDK for Web Clients version 8.x or earlier, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-angular2/releases/tag/latest-for-client-8.x).
 * For a version of this example compatible with Lightstreamer SDK for Web Clients version 7.x or earlier, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-angular2/releases/tag/latest-for-client-7.x).
