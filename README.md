@@ -2,7 +2,7 @@
 
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-angular2 -->
 
-A simple stocklist demo application showing integration between [Angular](http://angular.io/) and the <b>Lightstreamer Web Client library</b>.
+A simple stocklist demo application showing the integration between [Angular](http://angular.io/) and [AG Grid](https://www.ag-grid.com) with the <b>Lightstreamer Web Client library</b>.
 
 ## Live Demo
 
