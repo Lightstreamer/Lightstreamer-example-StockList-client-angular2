@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-demo2:build:production"
+              "buildTarget": "angular-demo2:build:production"
             },
             "development": {
-              "browserTarget": "angular-demo2:build:development"
+              "buildTarget": "angular-demo2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

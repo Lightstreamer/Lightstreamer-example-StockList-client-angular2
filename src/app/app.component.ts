@@ -1,6 +1,14 @@
 import { Component } from '@angular/core';
+import { AgGridAngular } from 'ag-grid-angular';
+import { AllCommunityModule, ModuleRegistry, provideGlobalGridOptions } from 'ag-grid-community'; 
 import { ColDef, GridReadyEvent, GetRowIdFunc, GetRowIdParams, GridApi } from 'ag-grid-community';
 import { LightstreamerClient, Subscription, ConsoleLogLevel, ConsoleLoggerProvider, ItemUpdate, StatusWidget } from 'lightstreamer-client-web/lightstreamer.esm';
+
+// Mark all grids as using legacy themes
+provideGlobalGridOptions({ theme: "legacy" });
+
+// Register all Community features
+ModuleRegistry.registerModules([AllCommunityModule]);
 
 interface StockItem {
   stock_name: string;
@@ -19,6 +27,7 @@ interface StockItem {
 
 @Component({
  selector: 'app-root',
+ imports: [AgGridAngular],
  templateUrl: './app.component.html',
  styleUrls: ['./app.component.scss']
 })
